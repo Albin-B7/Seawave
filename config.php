@@ -7,7 +7,7 @@
 	$pass='';
 
 	try {
-		$conn = new PDO("mysql:host=$host;dbname=$db",$user,$pass);
+		$con = new PDO("mysql:host=$host;dbname=$db",$user,$pass);
 		
         
 	

@@ -6,7 +6,7 @@ if(isset($_POST['submit'])) {
     $password = $_POST['password'];
 
     $sql = "SELECT * FROM users WHERE username = :username";
-    $prep = $conn->prepare($sql);
+    $prep = $con->prepare($sql);
     $prep->bindParam(':username', $username);
     $prep->execute();
 
