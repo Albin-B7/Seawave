@@ -1,8 +1,17 @@
+<?php
+session_start();
+if (!isset($_SESSION['username'])) {
+    header("Location: adminlogin_.php"); 
+    exit;
+}
+?>
+
+
 <h1 style="text-align: center;">Dashboard</h1>
 <body style="background-color: lightgray;">
 	<div class="tm-container" style="margin-left: 30%;width: 1%;">
     <div class="tm-row">
-      <!-- Site Header -->
+      
       <div class="tm-left">
         <div class="tm-left-inner">
           <div class="tm-site-header">
@@ -56,9 +65,7 @@ if (empty($_SESSION['fullname'])) {
 }
 $sql="SELECT * from users";
 $prep=$con->prepare($sql);
-//$prep->execute();
-//$datas=$prep->fetchAll();
-//var_dump ($datas);die;
+
 ?>
 <?php require 'header.php'?>
 

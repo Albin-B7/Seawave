@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="css/tooplate-wave.css">
 <div class="tm-container" style="margin-left: 30%;">
     <div class="tm-row">
-      <!-- Site Header -->
+      
       <div class="tm-left">
         <div class="tm-left-inner">
           <div class="tm-site-header">

@@ -15,7 +15,7 @@ if(isset($_POST['submit'])) {
     if ($user && password_verify($password, $user['password'])) {
         session_start();
         $_SESSION['username'] = $user['username'];
-        header("Location: index.php");
+        header("Location: index2.php");
         exit;
     } else {
         echo "Invalid login credentials";
